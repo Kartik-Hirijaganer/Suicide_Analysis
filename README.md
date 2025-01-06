@@ -12,10 +12,7 @@ This project aims to identify the most influencing factors responsible for the s
   - **Scikit-Learn** – Machine learning algorithms and tools  
   - **StatsModels** – Statistical modeling and tests  
   - **SHAP** – Explainability of machine learning models  
-  - **DMBA** – Model selection, regression diagnostics, and visualizations  
-  - **pydotplus** – Graph visualization (for decision trees)  
-  - **IPython** – Interactive computing and display  
-  - **SciPy** – Statistical and scientific functions
+  - **DMBA** – Model selection, regression diagnostics, and visualizations
 
 
 ## Dataset Description
