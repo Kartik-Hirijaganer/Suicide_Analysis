@@ -66,7 +66,11 @@ The data is collected from the World Bank Data set. Reference: https://data.worl
 
 #### Visualizations
 - plotted visualizations of suicide rates and the most influencing factors to visualize the effects of factors in suicide rates. 
-
+**Visualizations for UAE**
+![image alt](https://github.com/Kartik-Hirijaganer/Suicide_Analysis/blob/6de95686438d3e84d46a3dbde856bf1def233afa/images/factors_effect_UAE.png)
+![image alt](https://github.com/Kartik-Hirijaganer/Suicide_Analysis/blob/6de95686438d3e84d46a3dbde856bf1def233afa/images/shap_decade_UAE.png)
+![image alt](https://github.com/Kartik-Hirijaganer/Suicide_Analysis/blob/6de95686438d3e84d46a3dbde856bf1def233afa/images/mortality_trend_India.png)
+![image alt](https://github.com/Kartik-Hirijaganer/Suicide_Analysis/blob/6de95686438d3e84d46a3dbde856bf1def233afa/images/unemp_vs_suicide_Uk.png)
 
 ## How to Run the Project
 
