@@ -1,7 +1,7 @@
-# Suicide Ananlysis using World Data
+# Suicide Analysis using World Data
 
 ## Overview
-This project aims to identify most influencing factors responsible for suicide mortality rate in the world.
+This project aims to identify the most influencing factors responsible for the suicide mortality rate in the world.
 ## Tech Stack
 - **Programming Language:** Python  
 - **Libraries & Frameworks:**
@@ -15,13 +15,11 @@ This project aims to identify most influencing factors responsible for suicide m
   - **DMBA** – Model selection, regression diagnostics, and visualizations  
   - **pydotplus** – Graph visualization (for decision trees)  
   - **IPython** – Interactive computing and display  
-  - **SciPy** – Statistical and scientific functions  
-  - **sklearn.tree** – Decision tree models and visualizations  
-  - **sklearn.ensemble** – Ensemble learning models like Random Forest and Gradient Boosting
+  - **SciPy** – Statistical and scientific functions
 
 
 ## Dataset Description
-The dataset is collected from World Bank Data set. Reference: https://data.worldbank.org/  
+The data is collected from the World Bank Data set. Reference: https://data.worldbank.org/  
 
 ## Project Workflow
 
@@ -29,12 +27,12 @@ The dataset is collected from World Bank Data set. Reference: https://data.world
 
 ### Analyzing and Preprocessing Data
 
-- Created pivot table by converting year columns into single column setting Country Name, Country Code, and Year as the index. The Series Name column is used as new column headers.
+- Created pivot table by converting year columns into single columns setting Country Name, Country Code, and Year as the index. The Series Name column is used as new column headers.
 - Removed columns having more than 75% data as Null or NaN. 
-- Filled NaN values with median of each column as columns had about normal distribution.
+- Filled NaN values with the median of each column as columns had about normal distribution.
 
 #### Selecting Relevant Features
-- Used Backward Elimination process to select best features for analysis.
+- Used the Backward Elimination process to select the best features for analysis.
 
 
 #### Addressing Multicollinearity
@@ -42,32 +40,32 @@ The dataset is collected from World Bank Data set. Reference: https://data.world
 - **Iteratively removed variables** with the highest VIF until all remaining variables had **VIF < 4**.  
 
 #### Checked for Non-Normality
-- Plotted a scatter plot of fitted vs residuals from the Linear Regression model generated.
+- A scatter plot of fitted vs residuals from the linear regression model was plotted.
 - Performed Breusch-Pagan test for Heteroscedasticity.
--- Breusch-Pagan test p-value: 0.5318654520312872.
+  - Breusch-Pagan test p-value: 0.5318654520312872.
 - Plotted Histogram of Residuals
 - Further plotted Q-Q plot to understand non-normality
 
 #### Further Feature Selection
-- Further dropped variables having p-value higher than 0.05 and features which had no effect on the model accuracy when dropped.
-- Rechecked VIF to check if multi-collinearity still exists.
+- Further dropped variables having a p-value higher than 0.05 and features that did not affect the model accuracy when dropped.
+- Re-checked VIF to see if multi-collinearity still exists.
 
 #### Decision Trees
-- Plotted Decision tree to identify best features for the split by first finding the optimal dept of the tree.  
+- Plotted Decision tree to identify best features for the split by first finding the optimal depth of the tree.  
 
 ## Ensemble Models: Bagging, Boosting and Random Forest
-- Ran Bagging, Boosting and Random Forest to find best model for prediction.
+- Ran Bagging, Boosting, and Random Forest to find the best prediction model.
 - Boosting Model has the least RSME value.
 
 
 ### Feature Analysis
-- Proceeded with Boosting Model to find top features responsible for suicide rates.
+- Proceeded with the Boosting Model to find top features responsible for suicide rates.
 - Plotted Partial Dependency Plots of the top 4 most influencing factors.
 - Further built SHAP explainer to validate the findings.
-- Used SHAP force plot to analyse most suicide rate influcing factors for individual countries and whether the factors changed in a decade.
+- Used SHAP force plot to analyze most suicide rate influencing factors for individual countries and whether the factors changed in a decade.
 
 #### Visualizations
-- plotted visualizations of sucide rates and its most influencing factors to visualize the effects of factors in suicide rates. 
+- plotted visualizations of suicide rates and the most influencing factors to visualize the effects of factors in suicide rates. 
 
 
 ## How to Run the Project
@@ -81,8 +79,8 @@ The dataset is collected from World Bank Data set. Reference: https://data.world
 ### 4️⃣ Run the .ipynb file 
 
 
-### **Top 5 Features Increasing Risk (Hazard Ratio > 1)**
-1. **Unemployment Rate:** As umployment increases, there is a rise in suicide rates.
+### **Top 5 Factors**
+1. **Unemployment Rate:** As unemployment increases, there is a rise in suicide rates.
 2. **High Tariff Rate** → As the tariff rates increased, there was a corresponding rise in the suicide mortality rate.
 3. **Tax Revenue** → Due to the rise in tax revenue, a significant number of people began to take their own lives
 4. **Immunization** → Low immunization rates can increase suicide rates by causing more illness and putting pressure on mental health support.
