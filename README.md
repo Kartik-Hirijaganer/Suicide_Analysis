@@ -1,17 +1,8 @@
 # Suicide Ananlysis using World Data
 
-## 📌 Overview
-This Kaggle competition aims to develop **survival predictive models** to improve the prediction of transplant survival for patients undergoing **allogeneic Hematopoietic Cell Transplantation (HCT).**
-
-<!-- ## 🛠 Tech Stack
-- **Programming Language:** Python  
-- **Libraries & Frameworks:**
-  - Pandas
-  - NumPy
-  - Scikit-Learn
-  - StatsModel -->
-
-## 🛠 Tech Stack
+## Overview
+This project aims to identify most influencing factors responsible for suicide mortality rate in the world.
+## Tech Stack
 - **Programming Language:** Python  
 - **Libraries & Frameworks:**
   - **Pandas** – Data manipulation and analysis  
@@ -29,12 +20,10 @@ This Kaggle competition aims to develop **survival predictive models** to improv
   - **sklearn.ensemble** – Ensemble learning models like Random Forest and Gradient Boosting
 
 
-## 📊 Dataset Description
+## Dataset Description
 The dataset is collected from World Bank Data set. Reference: https://data.worldbank.org/  
 
----
-
-## 🔎 Project Workflow
+## Project Workflow
 
 ### Installing Libraries and Loading Dataset
 
